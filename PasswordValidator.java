@@ -7,8 +7,7 @@ public class PasswordValidator {
         if (password.length() < 8 || password.length() > 16) {
             return false;
         }
-
-        // Check for at least three out of four categories
+        
         int count = 0;
         if (password.matches(".*[a-z].*")) {
             count++;
